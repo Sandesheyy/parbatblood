@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parbat Blood Donation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Header -->
+  <header class="fade-in">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Parbat Blood Logo" class="logo-image">
+      <span class="logo-text">Parbat Blood</span>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#find-donate">Find/Donate</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- JavaScript for Mobile Menu -->
+<script>
+  const mobileMenuToggle = document.getElementById('mobile-menu'); // Changed name
+  const navMenu = document.querySelector('.nav-menu');
+
+  mobileMenuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    mobileMenuToggle.classList.toggle('active');
+  });
+</script>
+
+
+</body>
+</html>
+
+  <!-- Home Section -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <section id="home" class="home-section">
+    <div class="left-side">
+      <h1 class="home-title">Parbat Blood</h1>
+    </div>
+    <div class="center-logo">
+      <img src="images/homelogo.png" alt="Parbat Blood Logo" class="center-image">
+    </div>
+    <div class="right-side">
+      <h1 class="home-title">Donate Blood, Save Lives</h1>
+    </div>
+  </section>
+
+  
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+  </script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
+<!-- About Us Section -->
+<section id="about" class="about-section">
+  <div class="section-divider"></div>
+  <div class="about-content">
+    <h2 class="about-title">About Us</h2>
+    <p class="about-text">
+      Welcome to Parbat Blood! We are dedicated to providing real-time blood donation services to 
+those in need within the Parbat district. Our platform connects individuals in urgent need of blood
+ with generous donors through our "Find Blood" and "Donate Blood" sections.
+
+Founded by 
+Mr. Sandesh Sharma, Parbat Blood is driven by a passion for helping others and a commitment 
+to improving our services. While our current focus is on the Parbat district, we aim to expand all over Nepal
+and enhance our platform to better serve our community in the future.
+
+Thank you for being part 
+of this life-saving mission.
+</p>
+  </div>
+  <div class="about-image">
+    <img src="images/about-us.jpg" alt="About Us">
+    <p class="founder-name">Mr. Sandesh Sharma,</p>
+    <p class="founder-name">Founder of Parbat blood</p>
+</div>
+</section>
+
+
+<!-- Find/Donate Blood Section -->
+<section id="find-donate" class="find-donate-section">
+  <div class="find-donate-content">
+    <h2 class="find-donate-title">Find / Donate Blood</h2>
+    <p class="find-donate-text">
+      Here you can find potential donors and also register yourself as a donor. If you want blood, the donors in the Find Blood section might help you, and if you want to donate, fill the form and we will call for confirmation before listing you. Thank you.
+    </p>
+    
+    <div class="find-donate-buttons">
+      <a href="find-blood.html" class="find-blood-btn">Find Blood</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScb2kmCjjmHxVr6XvDribpiYSG7kDET08c_ePSVTx_bZzRD3Q/viewform?usp=sf_link" target="_blank" class="donate-blood-btn">Donate Blood</a>
+    </div>
+    
+    <!-- New Eligibility Button -->
+    <button class="eligibility-btn" onclick="openEligibilityPopup()">Check Eligibility for Donation</button>
+
+    <p class="warning-text">
+      *The donors are registered online. They might not be ready or available for donation due to various circumstances. This website is here just to make it easier to find donors. Please don't totally rely on this website.We do not know the infection status, so Serological investigation and all necessary tests should be done before donation.
+    </p>
+  </div>
+</section>
+
+<!-- Eligibility Popup -->
+<div id="eligibility-popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeEligibilityPopup()">&times;</span>
+    <h3>Blood Donation Eligibility Criteria</h3>
+    <ul class="eligibility-list">
+      <li>*Must be between 18-65 years old.</li>
+      <li>*Weigh at least 50 kg (110 lbs).</li>
+      <li>*Have a healthy hemoglobin level.</li>
+      <li>*Be in general good health and feeling well.</li>
+      <li>*No recent surgeries or infections.</li>
+      <li>*No tattoos or piercings in the last 6 months.</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+  <h2 class="gallery-title">Photo Gallery</h2>
+  
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/donation-photos/photo1.jpg" alt="Gallery Photo 1">
+    </div>
+    <div class="gallery-item">
+      <img src="images/donation-photos/photo2.jpg" alt="Gallery Photo 2">
+    </div>
+    <div class="gallery-item">
+      <img src="images/donation-photos/photo3.jpg" alt="Gallery Photo 3">
+    </div>
+    <div class="gallery-item">
+      <img src="images/donation-photos/photo4.jpg" alt="Gallery Photo 4">
+    </div>
+    <div class="gallery-item">
+      <img src="images/donation-photos/photo5.jpg" alt="Gallery Photo 5">
+    </div>
+    <div class="gallery-item">
+      <img src="images/donation-photos/photo6.jpg" alt="Gallery Photo 6">
+    </div>
+  </div>
+
+  <button class="show-more-btn">Show More</button>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-us-section">
+  <div class="contact-us-container">
+    <div class="contact-form-box">
+      <h2 class="contact-title">Contact Us</h2>
+<form action="https://formsubmit.co/sandeshpoudelsharma@gmail.com" method="POST" class="contact-form"> 
+      
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required placeholder="Your Address">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="map-box">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.158507647479!2d83.66021227541212!3d28.223234780976707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594f92b5045a5%3A0x9e6a3af9ed0c5448!2sParbat%20District%2C%20Nepal!5e0!3m2!1sen!2snp!4v1694097689456!5m2!1sen!2snp"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Donate Us Section -->
+<section class="donate-us-section">
+  <div class="donate-container">
+    <div class="donate-icon">
+      <img src="images/donation.png" alt="Donation Icon">
+    </div>
+    <div class="donate-content">
+      <h2>Support Parbat Blood</h2>
+      <p>Your donation will help us upgrade our website and improve our services, making it easier for those in need to find potential blood donors. Every contribution counts, and we are grateful for your support.</p>
+      <a href="donate-us.html" class="donate-button">Donate Us</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>All rights reserved. Copyright 2024 @Parbat Blood<br> 
+        Contact: 9842848766 Mail: sandeshpoudelsharma@gmail.com</br>
+      </p>
+    </div>
+    
+    <div class="footer-right">
+      <a href="privacy-policy.html" target="_blank">Privacy and Policy</a><br>
+      Designed by <a href="https://facebook.com/sandesheyy" target="_blank">Sandesh Sharma</a></br>    
+</div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://facebook.com/sandesheyy" target="_blank">
+      <img src="images/facebook-icon.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com/sandesheyy" target="_blank">
+      <img src="images/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/9842848766" target="_blank">
+      <img src="images/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
